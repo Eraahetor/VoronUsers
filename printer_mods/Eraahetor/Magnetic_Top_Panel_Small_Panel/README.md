@@ -6,7 +6,7 @@ A Voron 2.4 top-panel corner system for **smaller 3 mm polycarbonate panels**. I
 
 ## Why this variant exists
 
-The original magnetic-top-panel design places the upper magnet carrier underneath the panel. The foam tape had to compensate for the thickness of the upper and lower corner pieces combined. With moving the magnets from beneath the panel, the top corner piece can sit flush with the bottom of the top panel and the foam tape only has to compensate for the 3mm of the bottom corner piece.
+The original magnetic-top-panel design places the upper magnet carrier underneath the panel. The foam tape had to compensate for the thickness of the upper and lower corner pieces combined. With moving the magnets from beneath the panel, the top corner piece can sit flush with the bottom of the top panel and the foam tape only has to compensate for the 3 mm of the bottom corner piece.
 
 This variant changes the geometry in a functional way:
 
@@ -49,22 +49,22 @@ The supplied parametric OpenSCAD source exposes the X/Y panel and frame dimensio
 
 ## Printing
 
-Recommended: **ABS or ASA**, 100% scale, standard Voron structural-part settings. No supports are required with the supplied STL orientations.
+Recommended: **ABS or ASA**, 100% scale, standard Voron structural-part settings.
 
 - `frame_corner_10x3_x4.stl`: print base-down as supplied.
 - `[a]_panel_corner_top_cap_10x3_x4.stl`: supplied **roof-down**, so the 1 mm top face is on the build plate and the recess prints upward.
-- The model does not need to be scaled up in compensation for shrinkage in my experience
+- The model does not need to be scaled up in compensation for shrinkage in my experience.
 
 ## Assembly
 
 1. Print four of each part.
-2. If the surfaces of your print are not perfectly smooth, you can sand them for a more flush fit when installed.
-3. Dry-fit all eight 10 x 3 mm magnets before bonding anything.
-4. Glue the magnets into the bottom corner pieces first. Once they are set you can just attach a magnet on top and press the top corner piece    onto the extra magnet to press fit it, no glue required.
-6. Install the four frame corner pairs by pressing the bottom corner piece into the upwards facing extrusions and check if your panel fits       inside them.
-7. Then glue each top corner to the upper side of the top panel.
-8. Place the panel on the printer; the magnets align over the frame corners automatically.
-9. If there is a small gap between the foam tape on the top panel and the frame, you can just put a 1mm foam tape strip on top of the 3mm one    to get a better seal
+2. If the surfaces of your print are not perfectly smooth, you can sand them for a more flush fit when installed
+3. Glue the magnets into the bottom corner pieces first. Once they are set you can just attach a magnet on top and press the top corner          piece onto the extra magnet to press fit it, no glue required.
+4. Install the four frame corner pairs by pressing the bottom corner piece into the upwards facing extrusions.
+5. Check if your panel fits inside them.
+6. Then glue each top corner to the upper side of the top panel.
+7. Place the panel on the printer; the magnets align over the frame corners automatically.
+8. If there is a small gap between the foam tape on the top panel and the frame, you can just put a 1mm foam tape strip on top of the 3mm one    to get a better seal
 
 ![Magnet detail](Images/magnet_detail.jpg)
 
@@ -78,7 +78,7 @@ Recommended: **ABS or ASA**, 100% scale, standard Voron structural-part settings
 - roof thickness;
 - magnet diameter and clearance.
 
-The default values reproduce the physically tested 434/441 mm version. STEP exports of the final tested geometry are also included.
+The default values fit the panel and frame (434/441 mm) of a standard Voron 300 kit. STEP exports of the final tested geometry are also included.
 
 ## Attribution and license
 
