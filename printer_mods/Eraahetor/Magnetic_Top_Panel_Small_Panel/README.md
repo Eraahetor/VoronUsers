@@ -1,12 +1,12 @@
 # Magnetic Top Panel - Small Panel Variant
 
-A Voron 2.4 top-panel corner system for **undersized 3 mm polycarbonate panels**. It is based on Printopal's [Magnetic top panel](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/Printopal/Magnetic_top_panel), but moves the magnetic interface outside the panel footprint and captures the panel from above.
+A Voron 2.4 top-panel corner system for **smaller 3 mm polycarbonate panels**. It is based on Printopal's [Magnetic top panel](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/Printopal/Magnetic_top_panel), but moves the magnet holes from beneath the top panel to accommodate for panels smaller than intended for the original design.
 
 ![Installed overview](Images/installed_overview.jpg)
 
 ## Why this variant exists
 
-The original magnetic-top-panel design places the upper magnet carrier underneath the panel. If the top panel is slightly undersized, that carrier can consume the limited gap between the panel and frame and may require thicker sealing foam.
+The original magnetic-top-panel design places the upper magnet carrier underneath the panel. The foam tape had to compensate for the thickness of the upper and lower corner pieces combined. With moving the magnets from beneath the panel, the top corner piece can sit flush with the bottom of the top panel and the foam tape only has to compensate for the 3mm of the bottom corner piece.
 
 This variant changes the geometry in a functional way:
 
@@ -45,7 +45,7 @@ The supplied parametric OpenSCAD source exposes the X/Y panel and frame dimensio
 - 4x `panel_corner_top_cap_10x3`
 - 8x neodymium magnets, **10 mm diameter x 3 mm thick**
 - Existing 3 mm top panel
-- Optional: a small amount of VHB, epoxy, or another suitable adhesive if you want the four top caps to remain attached to the panel when it is lifted off
+- Any type of functional adhesive
 
 ## Printing
 
@@ -53,17 +53,18 @@ Recommended: **ABS or ASA**, 100% scale, standard Voron structural-part settings
 
 - `frame_corner_10x3_x4.stl`: print base-down as supplied.
 - `[a]_panel_corner_top_cap_10x3_x4.stl`: supplied **roof-down**, so the 1 mm top face is on the build plate and the recess prints upward.
-- Do not scale the model to compensate for ABS shrinkage; calibrate dimensional/XY compensation instead.
+- The model does not need to be scaled up in compensation for shrinkage in my experience
 
 ## Assembly
 
 1. Print four of each part.
-2. Dry-fit all eight 10 x 3 mm magnets before bonding anything.
-3. Check polarity carefully: every top-cap magnet must attract its matching frame magnet.
-4. Install the four frame corners.
-5. Place the centered 434 mm panel into the four top caps. The cap recess is exactly 3.0 mm deep.
-6. If desired, bond the cap to the panel so the complete top lifts off as one assembly. VHB or epoxy avoids the whitening/blooming that some CA glues can produce on clear polycarbonate.
-7. Place the panel on the printer; the magnets align over the frame corners automatically.
+2. If the surfaces of your print are not perfectly smooth, you can sand them for a more flush fit when installed.
+3. Dry-fit all eight 10 x 3 mm magnets before bonding anything.
+4. Glue the magnets into the bottom corner pieces first. Once they are set you can just attach a magnet on top and press the top corner piece    onto the extra magnet to press fit it, no glue required.
+6. Install the four frame corner pairs by pressing the bottom corner piece into the upwards facing extrusions and check if your panel fits       inside them.
+7. Then glue each top corner to the upper side of the top panel.
+8. Place the panel on the printer; the magnets align over the frame corners automatically.
+9. If there is a small gap between the foam tape on the top panel and the frame, you can just put a 1mm foam tape strip on top of the 3mm one    to get a better seal
 
 ![Magnet detail](Images/magnet_detail.jpg)
 
