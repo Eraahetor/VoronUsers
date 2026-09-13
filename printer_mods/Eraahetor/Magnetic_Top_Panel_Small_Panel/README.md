@@ -1,4 +1,4 @@
-# Magnetic Top Panel - Small Panel Variant
+# Magnetic Top Panel - Top Cap Variant
 
 A Voron 2.4 top-panel corner system for **smaller 3 mm polycarbonate panels**. It is based on Printopal's [Magnetic top panel](https://github.com/VoronDesign/VoronUsers/tree/main/printer_mods/Printopal/Magnetic_top_panel), but moves the magnet holes from beneath the top panel to accommodate for panels smaller than intended for the original design.
 
